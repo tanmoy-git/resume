@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from "framer-motion";
-import { experiences } from "@/data/experience";
+import { experiences, internships } from "@/data/experience";
 
 export default function Experience() {
   return (
@@ -11,6 +11,7 @@ export default function Experience() {
       transition={{ duration: 0.5 }}
       className="w-full max-w-4xl mx-auto"
     >
+      {/* Work Experience Section */}
       <motion.h1 
         className="text-3xl sm:text-4xl font-bold mb-8 text-gray-900 relative inline-block"
         initial={{ opacity: 0 }}
@@ -75,6 +76,88 @@ export default function Experience() {
                 
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill, index) => (
+                    <motion.span 
+                      key={index}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.6 + idx * 0.1 + index * 0.05, duration: 0.3 }}
+                      className="bg-gradient-to-r from-slate-50 to-slate-100 border border-slate-200 text-gray-700 px-2.5 py-1 text-xs sm:text-sm rounded-md font-medium"
+                    >
+                      {skill}
+                    </motion.span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+      
+      {/* Internships Section */}
+      <motion.h1 
+        className="text-3xl sm:text-4xl font-bold mb-8 mt-16 text-gray-900 relative inline-block"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+      >
+        Internships
+        <span className="absolute -bottom-1 left-0 w-1/2 h-1 bg-green-600 rounded-full"></span>
+      </motion.h1>
+      
+      <div className="space-y-8 sm:space-y-10">
+        {internships.map((intern, idx) => (
+          <motion.div 
+            key={intern.id}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 + idx * 0.1, duration: 0.5 }}
+            className="relative"
+          >
+            <div className="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-200/60">
+              {/* Time line dots and line */}
+              <div className="absolute left-8 top-8 sm:left-10 sm:top-10 bottom-0 flex flex-col items-center">
+                <div className="h-5 w-5 rounded-full bg-gradient-to-r from-green-600 to-teal-600 shadow-md shadow-green-600/20 z-10"></div>
+                {idx !== internships.length - 1 && (
+                  <div className="h-full w-0.5 bg-gradient-to-b from-green-500/70 via-teal-300/50 to-transparent"></div>
+                )}
+              </div>
+              
+              {/* Card content */}
+              <div className="p-6 sm:p-8 pl-16 sm:pl-20 relative z-0">
+                <div className="mb-4">
+                  <div className="flex items-center mb-1.5">
+                    <h2 className="text-xl sm:text-2xl font-bold text-gray-900">{intern.title}</h2>
+                    <span className="ml-3 px-2.5 py-0.5 text-xs font-medium bg-green-100 text-green-800 rounded-full">
+                      {intern.period}
+                    </span>
+                  </div>
+                  
+                  <div className="text-gray-700 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3 text-sm sm:text-base">
+                    <span className="font-medium">{intern.company}</span>
+                    <span className="hidden sm:inline-block text-slate-400">•</span>
+                    <span className="text-gray-700">{intern.location}</span>
+                  </div>
+                </div>
+                
+                <div className="mb-5">
+                  <ul className="space-y-2.5 text-gray-700 text-sm sm:text-base">
+                    {intern.description.map((item, index) => (
+                      <motion.li 
+                        key={index} 
+                        className="flex items-start"
+                        initial={{ opacity: 0, x: -10 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.5 + idx * 0.1 + index * 0.05, duration: 0.4 }}
+                      >
+                        <div className="mt-1.5 mr-3 h-1.5 w-1.5 rounded-full bg-green-500 flex-shrink-0"></div>
+                        <span className="leading-relaxed">{item}</span>
+                      </motion.li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div className="flex flex-wrap gap-2">
+                  {intern.skills.map((skill, index) => (
                     <motion.span 
                       key={index}
                       initial={{ opacity: 0, scale: 0.8 }}

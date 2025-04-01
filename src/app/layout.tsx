@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Resume Builder",
+  title: "Tanmoy",
   description: "A modern resume builder application",
 };
 
@@ -23,6 +23,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className={`${inter.variable} font-sans antialiased min-h-screen bg-gradient-to-b from-slate-50 to-slate-100/80`}>
         <div className="flex flex-col min-h-screen pb-16 lg:pb-0">
@@ -32,7 +34,7 @@ export default function RootLayout({
           </main>
           <footer className="hidden lg:block py-4 bg-slate-900 text-slate-400 text-sm text-center">
             <div className="container mx-auto">
-              <p>© {new Date().getFullYear()} Resume Builder — Built with Next.js and TailwindCSS</p>
+              <p>© {new Date().getFullYear()} Tanmoy — Built with Next.js and TailwindCSS</p>
             </div>
           </footer>
         </div>

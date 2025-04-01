@@ -54,3 +54,35 @@ export const experiences: Experience[] = [
     skills: ["HTML/CSS", "JavaScript", "React", "Git"]
   }
 ];
+
+// Export the internships data
+export const internships: Experience[] = [
+  {
+    id: 1,
+    title: "Software Engineering Intern",
+    company: "Innovate Tech Solutions",
+    location: "Singapore",
+    period: "May 2016 - Aug 2016",
+    description: [
+      "Developed frontend components for a customer relationship management system using React",
+      "Collaborated with senior developers to implement RESTful API endpoints using Node.js",
+      "Participated in code reviews and improved code quality through unit testing",
+      "Assisted in database optimization which improved query response times by 25%"
+    ],
+    skills: ["JavaScript", "React", "Node.js", "MongoDB", "Git"]
+  },
+  {
+    id: 2,
+    title: "Web Development Intern",
+    company: "Creative Digital Studios",
+    location: "Remote",
+    period: "Jan 2016 - Apr 2016",
+    description: [
+      "Built responsive web pages for client websites using HTML, CSS, and JavaScript",
+      "Implemented UI designs from Figma mockups with high fidelity",
+      "Optimized website performance and loading times using modern web techniques",
+      "Gained practical experience with version control systems and collaborative development"
+    ],
+    skills: ["HTML/CSS", "JavaScript", "Bootstrap", "jQuery", "Responsive Design"]
+  }
+];
