@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tanmoy Bhattacharjee · Senior Engineering Manager</title>
+<meta name="description" content="Tanmoy Bhattacharjee: Senior Engineering Manager in Singapore. 13+ years in software, 6+ years managing engineering teams. Hands-on builder of AI/LLM products, platforms and teams.">
+<meta name="author" content="Tanmoy Bhattacharjee">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Tanmoy Bhattacharjee · Senior Engineering Manager">
+<meta property="og:description" content="13+ years in software, 6+ years managing engineering teams. AI/LLM products, multi-tenant platforms and high-performing teams.">
+<meta property="og:url" content="https://tanmoy-git.github.io/resume/">
+<meta property="og:image" content="https://tanmoy-git.github.io/resume/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b1020">
+<link rel="canonical" href="https://tanmoy-git.github.io/resume/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Tanmoy Bhattacharjee","jobTitle":"Senior Engineering Manager","worksFor":{"@type":"Organization","name":"PropertyGuru"},"address":{"@type":"PostalAddress","addressLocality":"Singapore"},"email":"mailto:engg.tanmoy@gmail.com","url":"https://tanmoy-git.github.io/resume/","sameAs":["https://www.linkedin.com/in/tanmoy-linkdin/","https://github.com/tanmoy-git"],"alumniOf":"PSG College of Technology (Anna University)","knowsAbout":["Engineering Leadership","LLM Products","RAG","MCP","Platform Engineering","Multi-tenant Architecture","Distributed Systems"]}
+</script>
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<style>
+:root{
+  --bg:#0b1020;--bg2:#0f1629;--card:#121a30;--card2:#16203a;--line:#22304f;
+  --text:#e7ecf6;--muted:#9aa7c2;--dim:#6f7d9c;
+  --accent:#4ade80;--accent2:#60a5fa;--accent3:#c084fc;--warn:#fbbf24;
+  --glow:0 0 0 1px rgba(96,165,250,.15),0 20px 50px -20px rgba(0,0,0,.6);
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color-scheme:dark;
+}
+:root[data-theme="light"]{
+  --bg:#f6f8fc;--bg2:#eef2f9;--card:#ffffff;--card2:#f3f6fc;--line:#dde4f0;
+  --text:#0f172a;--muted:#475569;--dim:#64748b;
+  --accent:#059669;--accent2:#2563eb;--accent3:#7c3aed;--warn:#b45309;
+  --glow:0 0 0 1px rgba(37,99,235,.08),0 20px 40px -24px rgba(15,23,42,.25);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#f6f8fc;--bg2:#eef2f9;--card:#ffffff;--card2:#f3f6fc;--line:#dde4f0;
+    --text:#0f172a;--muted:#475569;--dim:#64748b;
+    --accent:#059669;--accent2:#2563eb;--accent3:#7c3aed;--warn:#b45309;
+    --glow:0 0 0 1px rgba(37,99,235,.08),0 20px 40px -24px rgba(15,23,42,.25);
+    color-scheme:light;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--text);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img,svg{display:block}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+.bg-grid{position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+   radial-gradient(600px 400px at 85% -5%,color-mix(in srgb,var(--accent2) 22%,transparent),transparent 70%),
+   radial-gradient(500px 380px at 0% 30%,color-mix(in srgb,var(--accent3) 14%,transparent),transparent 70%),
+   linear-gradient(var(--bg),var(--bg));}
+.bg-grid::after{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:48px 48px;opacity:.25;mask-image:linear-gradient(to bottom,#000,transparent 70%)}
+
+/* nav */
+header{position:sticky;top:0;z-index:20;backdrop-filter:saturate(1.4) blur(12px);background:color-mix(in srgb,var(--bg) 78%,transparent);border-bottom:1px solid color-mix(in srgb,var(--line) 70%,transparent)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font:600 15px var(--mono)}
+.logo b{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--accent2),var(--accent3));color:#fff;font-size:13px}
+.logo span{color:var(--muted)}.logo span i{color:var(--accent);font-style:normal}
+.links{display:flex;gap:4px;align-items:center}
+.links a{padding:6px 12px;border-radius:8px;color:var(--muted);font-size:14px}
+.links a:hover{color:var(--text);background:var(--card)}
+.icon-btn{display:grid;place-items:center;width:36px;height:36px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer}
+.icon-btn:hover{color:var(--text)}
+.menu-btn{display:none}
+@media (max-width:860px){
+  .links{position:absolute;top:60px;left:0;right:0;flex-direction:column;align-items:stretch;padding:8px 16px 16px;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+  .links.open{display:flex}.menu-btn{display:grid}
+}
+
+/* hero */
+.hero{padding:72px 0 40px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+@media (max-width:900px){.hero{grid-template-columns:1fr;padding-top:40px;gap:32px}}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);font-size:13px;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 25%,transparent)}
+h1{font-size:clamp(36px,6vw,60px);line-height:1.05;letter-spacing:-.03em;margin:18px 0 14px;font-weight:800}
+.grad{background:linear-gradient(90deg,var(--accent2),var(--accent3) 60%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{font-size:clamp(17px,2vw,19px);color:var(--muted);max-width:60ch}
+.lede strong{color:var(--text);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 18px;border-radius:11px;font-weight:600;font-size:15px;border:1px solid var(--line);background:var(--card);transition:transform .15s,border-color .15s}
+.btn:hover{transform:translateY(-1px);border-color:var(--accent2)}
+.btn.primary{background:linear-gradient(135deg,var(--accent2),var(--accent3));border:0;color:#fff}
+.btn svg{width:18px;height:18px}
+.terminal{border-radius:16px;border:1px solid var(--line);background:#0a0f1d;box-shadow:var(--glow);overflow:hidden;font:13.5px/1.75 var(--mono);color:#c9d4ea}
+.term-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;background:#0e1527;border-bottom:1px solid #1d2742}
+.term-bar i{width:11px;height:11px;border-radius:50%;background:#ff5f57}.term-bar i:nth-child(2){background:#febc2e}.term-bar i:nth-child(3){background:#28c840}
+.term-bar span{margin-left:8px;color:#6f7d9c;font-size:12px}
+.term-body{padding:16px 18px 18px;min-height:268px}
+.term-body .p{color:#4ade80}.term-body .k{color:#60a5fa}.term-body .s{color:#fbbf24}.term-body .c{color:#6f7d9c}
+.cursor{display:inline-block;width:8px;height:16px;background:#4ade80;vertical-align:-3px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:28px 0 8px}
+@media (max-width:900px){.stats{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){.stats{grid-template-columns:repeat(2,1fr)}}
+.stat{padding:18px 16px;border-radius:14px;background:var(--card);border:1px solid var(--line)}
+.stat b{display:block;font-size:28px;letter-spacing:-.02em;line-height:1.1}
+.stat span{font-size:13px;color:var(--muted)}
+
+/* sections */
+section{padding:72px 0 0}
+.eyebrow{font:600 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h2{font-size:clamp(26px,3.6vw,36px);letter-spacing:-.02em;margin:8px 0 10px;line-height:1.15}
+.sub{color:var(--muted);max-width:68ch;margin-bottom:28px}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:900px){.skills{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.skills{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:color-mix(in srgb,var(--accent2) 55%,var(--line))}
+.card h3{font-size:16px;display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.ico{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;flex:none;background:color-mix(in srgb,var(--c,var(--accent2)) 16%,transparent);color:var(--c,var(--accent2))}
+.ico svg{width:20px;height:20px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:12.5px;padding:4px 10px;border-radius:999px;background:var(--card2);border:1px solid var(--line);color:var(--muted)}
+.chip.hl{color:var(--text);border-color:color-mix(in srgb,var(--accent) 45%,var(--line))}
+
+/* experience */
+.timeline{position:relative;display:grid;gap:16px}
+.job{display:grid;grid-template-columns:180px 1fr;gap:24px}
+@media (max-width:760px){.job{grid-template-columns:1fr;gap:8px}}
+.when{font:13px var(--mono);color:var(--dim);padding-top:22px}
+.job .card{padding:22px}
+.job h3{font-size:18px;margin-bottom:2px;display:block}
+.co{color:var(--accent2);font-weight:600;font-size:15px}
+.ladder{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 16px}
+.rung{font-size:12.5px;padding:6px 10px;border-radius:10px;background:var(--card2);border:1px solid var(--line)}
+.rung em{display:block;font-style:normal;color:var(--dim);font:11.5px var(--mono)}
+.rung.now{border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
+ul.pts{list-style:none;display:grid;gap:8px}
+ul.pts li{position:relative;padding-left:20px;color:var(--muted);font-size:15px}
+ul.pts li::before{content:"";position:absolute;left:2px;top:.62em;width:8px;height:8px;border-radius:2px;background:linear-gradient(135deg,var(--accent2),var(--accent3))}
+ul.pts b{color:var(--text);font-weight:600}
+
+/* projects */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.filters button{font:500 13.5px var(--sans);padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--muted);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:960px){.projects{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.projects{grid-template-columns:1fr}}
+.proj{display:flex;flex-direction:column;gap:12px}
+.proj[hidden]{display:none}
+.art{height:120px;border-radius:12px;display:grid;place-items:center;position:relative;overflow:hidden;
+  background:radial-gradient(120px 80px at 30% 30%,color-mix(in srgb,var(--c) 30%,transparent),transparent),linear-gradient(135deg,color-mix(in srgb,var(--c) 14%,var(--card2)),var(--card2));border:1px solid var(--line)}
+.art svg{width:76px;height:76px;color:var(--c)}
+.art .tag{position:absolute;top:10px;left:10px;font:600 10.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:6px;background:color-mix(in srgb,var(--bg) 70%,transparent);color:var(--c)}
+.proj h3{margin:0;font-size:16.5px;display:block}
+.proj p{color:var(--muted);font-size:14.5px}
+.metrics{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
+.metric{font:600 12.5px var(--sans);padding:4px 9px;border-radius:8px;color:var(--c);background:color-mix(in srgb,var(--c) 13%,transparent)}
+
+/* misc */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.list{display:grid;gap:10px}
+.row{display:flex;gap:12px;align-items:flex-start}
+.row p{color:var(--muted);font-size:14.5px}.row strong{color:var(--text);display:block;font-size:15px}
+.contact{margin:72px 0 0;padding:40px;border-radius:20px;border:1px solid var(--line);text-align:center;
+  background:radial-gradient(400px 200px at 50% 0%,color-mix(in srgb,var(--accent2) 20%,transparent),transparent),var(--card)}
+.contact .cta{justify-content:center}
+footer{padding:36px 0 48px;color:var(--dim);font-size:13px;text-align:center}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+@media print{header,.bg-grid,.filters,.terminal,.contact .cta{display:none}.reveal{opacity:1;transform:none}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<div class="bg-grid" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-in" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.25 1.52-2.25 3.1V21H9z"/></symbol>
+    <symbol id="i-gh" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.6 9.6 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-lead" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4.5a3.2 3.2 0 010 6.2M18 14.3c1.8.8 3 2.6 3 4.7"/></symbol>
+    <symbol id="i-ai" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L18.5 9.5 13.9 11.4 12 16l-1.9-4.6L5.5 9.5l4.6-1.9z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></symbol>
+    <symbol id="i-plat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 01-.5-9A6 6 0 0118 8.5a4.5 4.5 0 01-.5 9.5z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+    <symbol id="i-growth" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 00-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0012 2z"/></symbol>
+    <symbol id="i-os" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="8" r="2.5"/><path d="M6 8.5v7M18 10.5c0 4-6 3-11 6"/></symbol>
+    <symbol id="i-lang" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <nav class="wrap nav" aria-label="Main">
+    <a class="logo" href="#top" aria-label="Tanmoy Bhattacharjee, home"><b>TB</b><span>tanmoy<i>@</i>eng:~$</span></a>
+    <div class="links" id="links">
+      <a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#recognition">Recognition</a><a href="#contact">Contact</a>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button class="icon-btn" id="theme" aria-label="Toggle light or dark theme"><svg width="18" height="18"><use href="#i-sun"/></svg></button>
+      <button class="icon-btn menu-btn" id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="links"><svg width="18" height="18"><use href="#i-menu"/></svg></button>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <span class="pill"><span class="dot"></span>Senior Engineering Manager · Singapore</span>
+      <h1>Tanmoy<br><span class="grad">Bhattacharjee</span></h1>
+      <p class="lede">Hands-on engineering leader with <strong>13+ years</strong> in software development and architecture, including <strong>6+ years managing engineering teams</strong>. I build AI/LLM products, multi-tenant platforms and the teams that ship them, currently leading a <strong>~14-person org across 3 teams</strong> at PropertyGuru.</p>
+      <div class="cta">
+        <a class="btn primary" href="assets/Tanmoy_Bhattacharjee_Resume.pdf" download><svg><use href="#i-dl"/></svg>Download résumé</a>
+        <a class="btn" href="mailto:engg.tanmoy@gmail.com"><svg><use href="#i-mail"/></svg>Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/tanmoy-linkdin/" target="_blank" rel="noopener"><svg><use href="#i-in"/></svg>LinkedIn</a>
+        <a class="btn" href="https://github.com/tanmoy-git" target="_blank" rel="noopener"><svg><use href="#i-gh"/></svg>GitHub</a>
+      </div>
+    </div>
+    <div class="terminal" role="img" aria-label="Terminal summary: Senior Engineering Manager, 13+ years, AI/LLM, platforms and people leadership">
+      <div class="term-bar"><i></i><i></i><i></i><span>~/tanmoy — zsh</span></div>
+      <div class="term-body" id="term"><noscript>
+<div><span class="p">$</span> whoami</div><div>Senior Engineering Manager · hands-on builder</div>
+</noscript></div>
+    </div>
+  </div>
+
+  <div class="stats reveal" aria-label="Highlights">
+    <div class="stat"><b>13+</b><span>years in software</span></div>
+    <div class="stat"><b>6+</b><span>years managing teams</span></div>
+    <div class="stat"><b>15+</b><span>engineers &amp; managers hired</span></div>
+    <div class="stat"><b>6 · 4</b><span>brands · countries, one platform</span></div>
+    <div class="stat"><b>~30%</b><span>faster bug fixes with AI tooling</span></div>
+    <div class="stat"><b>&lt;5%</b><span>attrition</span></div>
+  </div>
+
+  <section id="skills" class="reveal">
+    <div class="eyebrow">// what I bring</div>
+    <h2>Skills &amp; toolkit</h2>
+    <p class="sub">Leadership, AI and platform depth, with the hands-on engineering background to make good technical calls.</p>
+    <div class="skills">
+      <div class="card" style="--c:var(--accent)"><h3><span class="ico"><svg><use href="#i-lead"/></svg></span>Leadership</h3>
+        <div class="chips"><span class="chip hl">Engineering Strategy &amp; Vision</span><span class="chip hl">Org Design &amp; Scaling</span><span class="chip">Hiring &amp; Team Building</span><span class="chip">Coaching &amp; Mentorship</span><span class="chip">Performance &amp; Compensation</span><span class="chip">OKRs (6-week cycles)</span><span class="chip">Budget Ownership</span><span class="chip">Vendor Management</span><span class="chip">Build vs Buy</span><span class="chip">Distributed Teams</span></div></div>
+      <div class="card" style="--c:var(--accent3)"><h3><span class="ico"><svg><use href="#i-ai"/></svg></span>AI &amp; LLM</h3>
+        <div class="chips"><span class="chip hl">LLM Products</span><span class="chip hl">Agentic AI</span><span class="chip hl">RAG</span><span class="chip">Vector Databases</span><span class="chip hl">MCP (custom)</span><span class="chip">Guardrails &amp; AI Governance</span><span class="chip">Model Routing (Jev)</span><span class="chip">LLM Cost Optimization</span><span class="chip">AI-assisted SDLC</span><span class="chip">Claude</span><span class="chip">OpenAI</span><span class="chip">Gemini</span></div></div>
+      <div class="card" style="--c:var(--accent2)"><h3><span class="ico"><svg><use href="#i-plat"/></svg></span>Platform &amp; Architecture</h3>
+        <div class="chips"><span class="chip hl">System Design</span><span class="chip hl">Multi-tenant Architecture</span><span class="chip">Microservices</span><span class="chip">REST &amp; GraphQL</span><span class="chip">OAuth2 &amp; Token Auth</span><span class="chip">Platform Engineering</span><span class="chip">Developer Experience (DORA, SPACE)</span><span class="chip">SOC 2 &amp; PDPA</span></div></div>
+      <div class="card" style="--c:var(--warn)"><h3><span class="ico"><svg><use href="#i-cloud"/></svg></span>Cloud &amp; Reliability</h3>
+        <div class="chips"><span class="chip hl">AWS</span><span class="chip">GCP</span><span class="chip hl">Kubernetes</span><span class="chip">Docker</span><span class="chip">CI/CD (GitHub Actions, Jenkins)</span><span class="chip">Datadog</span><span class="chip">Kibana</span><span class="chip">Sentry</span><span class="chip">On-call via Squadcast</span></div></div>
+      <div class="card" style="--c:#f472b6"><h3><span class="ico"><svg><use href="#i-code"/></svg></span>Languages &amp; Frameworks</h3>
+        <div class="chips"><span class="chip hl">TypeScript</span><span class="chip">JavaScript</span><span class="chip hl">Node.js</span><span class="chip">NestJS</span><span class="chip hl">React</span><span class="chip">Next.js</span><span class="chip">Java</span><span class="chip">Python</span></div></div>
+      <div class="card" style="--c:#2dd4bf"><h3><span class="ico"><svg><use href="#i-growth"/></svg></span>Product &amp; Growth</h3>
+        <div class="chips"><span class="chip hl">A/B Testing (Statsig)</span><span class="chip">Segment</span><span class="chip">Braze</span><span class="chip">Life Cycle Marketing</span><span class="chip">SEO</span><span class="chip">Product, Design &amp; Data Partnership</span><span class="chip">TDD · Trunk-based</span></div></div>
+    </div>
+  </section>
+
+  <section id="experience" class="reveal">
+    <div class="eyebrow">// career</div>
+    <h2>Experience</h2>
+    <p class="sub">From backend platforms at eBay/PayPal to healthcare APIs at Philips to leading AI-native product engineering at PropertyGuru.</p>
+    <div class="timeline">
+      <div class="job">
+        <div class="when">Feb 2019 — Present</div>
+        <div class="card">
+          <h3>Senior Engineering Manager, APAC</h3><div class="co">PropertyGuru · Singapore</div>
+          <div class="ladder" aria-label="Promotions at PropertyGuru">
+            <div class="rung"><em>Feb 2019</em>Software Engineer</div>
+            <div class="rung"><em>Aug 2020</em>Senior Software Engineer</div>
+            <div class="rung"><em>Nov 2020</em>Tech Lead · 2 teams</div>
+            <div class="rung"><em>Apr 2022</em>Engineering Manager</div>
+            <div class="rung now"><em>Sep 2024</em>Senior Engineering Manager</div>
+          </div>
+          <ul class="pts">
+            <li>Lead a <b>~14-person org across 3 teams</b> (peak ~21) in Singapore, India and Malaysia, with vendors in Vietnam and Europe; <b>built 3 teams from scratch</b> and <b>hired 15+</b> engineers and managers.</li>
+            <li>Grew talent with <b>6 internal promotions</b> to Tech Lead / Lead Engineer and developed <b>1 engineering manager</b>, keeping attrition <b>under 5%</b>.</li>
+            <li>As an <b>AI advisory board</b> member, set company AI direction, governance, budget, tooling and guardrails for sensitive data.</li>
+            <li>Drove AI-native engineering with a <b>custom PropertyGuru MCP</b>, GitHub Copilot, Claude and OpenCode: <b>~30% faster bug fixes</b>, <b>15–20% faster feature delivery</b>.</li>
+            <li>Designed <b>multi-tenant systems across 6 brands in 4 countries</b>; raised deployment frequency from once every two weeks to <b>2–3 per week</b>; <b>~85% of legacy PHP retired</b>.</li>
+            <li>Set yearly vision and quarterly strategy, executed through <b>6-week OKR cycles</b>; own budgets for salaries, AI tooling, mapping solutions and contractors.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when">Apr 2016 — Jan 2019</div>
+        <div class="card">
+          <h3>Tech Lead, Full Stack</h3><div class="co">Philips</div>
+          <ul class="pts" style="margin-top:14px">
+            <li>Led a <b>6-member distributed team</b>.</li>
+            <li>Designed and implemented APIs for patient, care-provider and physician management for Hospital to Home, serving <b>~80,000 patients</b>.</li>
+            <li>Built a population-health data aggregation platform that helps hospitals analyze value-based care (launched Dec 2018); extended German support for the WellCentive launch in Rostock.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when">Feb 2015 — Mar 2016</div>
+        <div class="card">
+          <h3>Senior Backend Developer</h3><div class="co">HomeLane</div>
+          <ul class="pts" style="margin-top:14px">
+            <li>Built the pricing engine, a <b>token-based auth service with Google and Facebook OAuth2</b>, and search, list and product-detail APIs.</li>
+            <li>Built project aggregation APIs and pre-signed URL APIs for secure artifact upload and download on AWS.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="job">
+        <div class="when">Jun 2013 — Feb 2015</div>
+        <div class="card">
+          <h3>Backend Developer, Platforms</h3><div class="co">eBay / PayPal (eBay Inc.)</div>
+          <ul class="pts" style="margin-top:14px">
+            <li>Built <b>batch as a service</b>, replacing per-use-case batches with a shared service and reducing idle computation cycles.</li>
+            <li>Managed application-level routing using ESB; packaged platform-level functionality as dependency libraries.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <div class="eyebrow">// shipped</div>
+    <h2>Selected projects</h2>
+    <p class="sub">Products and platforms I've led or built, with measured outcomes.</p>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="ai">AI &amp; LLM</button><button aria-pressed="false" data-f="platform">Platform</button><button aria-pressed="false" data-f="growth">Growth</button><button aria-pressed="false" data-f="earlier">Earlier career</button>
+    </div>
+    <div class="projects" id="plist">
+
+      <article class="card proj" data-k="ai" style="--c:var(--accent3)">
+        <div class="art"><span class="tag">AI</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="18" width="46" height="40" rx="7"/><path d="M10 40h13l4 7h12l4-7h13"/><circle cx="61" cy="20" r="9" fill="currentColor" fill-opacity=".18"/><path d="M61 15v5l3 2"/><path d="M66 50l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="currentColor"/></svg></div>
+        <h3>Real-time AI lead management</h3>
+        <p>Lead management for agents with AI-driven grouping and real-time alerting.</p>
+        <div class="metrics"><span class="metric">85% adoption</span><span class="metric">93% RCR</span></div>
+      </article>
+
+      <article class="card proj" data-k="ai" style="--c:#f472b6">
+        <div class="art"><span class="tag">AI</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="16" width="50" height="40" rx="6"/><circle cx="22" cy="29" r="5"/><path d="M8 50l14-12 10 9 8-6 18 14"/><path d="M54 62l18-18M66 40l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></svg></div>
+        <h3>AI listing creation</h3>
+        <p>Auto-generated descriptions, image moderation, tagging and enhancement, plus auto-generated video with voiceover.</p>
+        <div class="metrics"><span class="metric">62% adoption</span><span class="metric">84% RCR</span><span class="metric">~85% moderation by AI</span></div>
+      </article>
+
+      <article class="card proj" data-k="ai" style="--c:var(--accent)">
+        <div class="art"><span class="tag">AI · DevEx</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="40" r="10" fill="currentColor" fill-opacity=".18"/><circle cx="14" cy="18" r="6"/><circle cx="66" cy="18" r="6"/><circle cx="14" cy="62" r="6"/><circle cx="66" cy="62" r="6"/><path d="M19 22l13 11M61 22L48 33M19 58l13-11M61 58L48 47"/></svg></div>
+        <h3>Custom PropertyGuru MCP &amp; AI-native SDLC</h3>
+        <p>Rolled out a custom MCP alongside GitHub Copilot, Claude and OpenCode across engineering.</p>
+        <div class="metrics"><span class="metric">~30% faster bug fixes</span><span class="metric">15–20% faster delivery</span></div>
+      </article>
+
+      <article class="card proj" data-k="ai" style="--c:var(--accent2)">
+        <div class="art"><span class="tag">AI · Platform</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="26" cy="20" rx="14" ry="6"/><path d="M12 20v26c0 3.3 6.3 6 14 6s14-2.7 14-6V20M12 33c0 3.3 6.3 6 14 6s14-2.7 14-6"/><path d="M44 40h10l8-14h8M54 40l8 14h8"/><path d="M58 64l6-4 6 4v7c0 2-6 5-6 5s-6-3-6-5z" fill="currentColor" fill-opacity=".2"/></svg></div>
+        <h3>Production LLM platform</h3>
+        <p>RAG, vector databases, MCP and guardrails, with LLM cost managed through smart model routing using Jev.</p>
+        <div class="metrics"><span class="metric">RAG</span><span class="metric">Guardrails</span><span class="metric">Model routing</span></div>
+      </article>
+
+      <article class="card proj" data-k="ai" style="--c:#2dd4bf">
+        <div class="art"><span class="tag">AI · Trust</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M40 8l26 10v18c0 17-11 29-26 36C25 65 14 53 14 36V18z" fill="currentColor" fill-opacity=".12"/><path d="M28 40l8 8 16-17"/></svg></div>
+        <h3>AI agent moderation &amp; verification</h3>
+        <p>AI moderation and verification of real estate agents on the marketplace.</p>
+        <div class="metrics"><span class="metric">72% accuracy</span></div>
+      </article>
+
+      <article class="card proj" data-k="growth" style="--c:var(--warn)">
+        <div class="art"><span class="tag">0 → 1</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 38L40 12l30 26"/><path d="M18 32v34h44V32"/><rect x="33" y="46" width="14" height="20" rx="2"/><path d="M58 8l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="currentColor"/></svg></div>
+        <h3>Home Owner Solutions &amp; AI home valuation</h3>
+        <p>Took Home Owner Solutions from 0 to 1; launched an AI home valuation and agent recommendation system.</p>
+        <div class="metrics"><span class="metric">0 → 1</span><span class="metric">Monetization bet</span></div>
+      </article>
+
+      <article class="card proj" data-k="growth" style="--c:#22c55e">
+        <div class="art"><span class="tag">Growth</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16h40a8 8 0 018 8v16a8 8 0 01-8 8H28l-12 10V48h-6"/><path d="M20 32h24M20 24h16"/><path d="M52 64l8-8 6 6 8-10"/></svg></div>
+        <h3>Enquiry revamp &amp; WhatsApp lead flow</h3>
+        <p>Re-architected the end-to-end lead submission journey with PropertyGuru in the middle of the WhatsApp flow.</p>
+        <div class="metrics"><span class="metric">+7.6% lead volume</span><span class="metric">~USD 38K/month saved</span></div>
+      </article>
+
+      <article class="card proj" data-k="growth" style="--c:var(--accent2)">
+        <div class="art"><span class="tag">IPO</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 66h60"/><rect x="16" y="44" width="10" height="22" rx="2"/><rect x="32" y="32" width="10" height="34" rx="2"/><rect x="48" y="20" width="10" height="46" rx="2" fill="currentColor" fill-opacity=".2"/><path d="M14 30l16-12 12 6 22-14"/></svg></div>
+        <h3>Listing Performance Insights &amp; SEO</h3>
+        <p>IPO-critical agent offering, plus Bahasa Melayu support for Malaysia that grew market share.</p>
+        <div class="metrics"><span class="metric">~4% subscription uplift</span><span class="metric">1.4x adoption MoM</span><span class="metric">~7% organic traffic</span></div>
+      </article>
+
+      <article class="card proj" data-k="growth" style="--c:#f472b6">
+        <div class="art"><span class="tag">Consumer</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="34" cy="34" r="20"/><path d="M49 49l19 19"/><path d="M24 36l6 6 12-14"/></svg></div>
+        <h3>Search &amp; consumer experience</h3>
+        <p>New search, relevant results, Google One Tap sign-in, and agent ratings and reviews.</p>
+        <div class="metrics"><span class="metric">+2.8% CTR</span><span class="metric">+1.7% conversion</span><span class="metric">+7% logged-in users</span><span class="metric">+4% acquisition</span></div>
+      </article>
+
+      <article class="card proj" data-k="platform" style="--c:var(--accent)">
+        <div class="art"><span class="tag">Platform</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="40" cy="40" r="28"/><path d="M12 40h56M40 12c9 8 9 48 0 56M40 12c-9 8-9 48 0 56"/><circle cx="22" cy="22" r="4" fill="currentColor"/><circle cx="60" cy="28" r="4" fill="currentColor"/><circle cx="26" cy="58" r="4" fill="currentColor"/><circle cx="58" cy="56" r="4" fill="currentColor"/></svg></div>
+        <h3>Multi-tenant marketplace platform</h3>
+        <p>One platform unified across PropertyGuru brands, eliminating custom releases per brand.</p>
+        <div class="metrics"><span class="metric">6 brands</span><span class="metric">4 countries</span></div>
+      </article>
+
+      <article class="card proj" data-k="platform" style="--c:var(--accent3)">
+        <div class="art"><span class="tag">DevEx</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="10" width="26" height="18" rx="4"/><rect x="8" y="34" width="26" height="12" rx="4"/><rect x="8" y="52" width="26" height="18" rx="4" fill="currentColor" fill-opacity=".18"/><path d="M50 62c0-14 4-28 14-40 4 6 6 12 6 18M56 46l-8 2M64 22l-12 4"/></svg></div>
+        <h3>React UI kit &amp; legacy modernisation</h3>
+        <p>A React UI kit on Next.js that sped up releases and helped retire the legacy PHP stack.</p>
+        <div class="metrics"><span class="metric">2–3 deploys/week</span><span class="metric">from 1 per 2 weeks</span><span class="metric">~85% PHP retired</span></div>
+      </article>
+
+      <article class="card proj" data-k="platform" style="--c:var(--warn)">
+        <div class="art"><span class="tag">Cloud</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M40 8l26 15v34L40 72 14 57V23z"/><path d="M40 8v64M14 23l52 34M66 23L14 57" stroke-opacity=".4"/><circle cx="40" cy="40" r="8" fill="currentColor" fill-opacity=".25"/></svg></div>
+        <h3>Communication &amp; preferences services</h3>
+        <p>Central REST microservices with multiple gateway support; AWS cost cut by right-sizing Kubernetes pods, under SOC 2 and PDPA.</p>
+        <div class="metrics"><span class="metric">Microservices</span><span class="metric">Kubernetes</span><span class="metric">SOC 2 · PDPA</span></div>
+      </article>
+
+      <article class="card proj" data-k="earlier" style="--c:#fb7185">
+        <div class="art"><span class="tag">Philips</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M40 66S10 48 10 28a14 14 0 0130-6 14 14 0 0130 6c0 20-30 38-30 38z" fill="currentColor" fill-opacity=".12"/><path d="M14 40h14l5-10 7 20 5-10h21"/></svg></div>
+        <h3>Hospital to Home &amp; population health</h3>
+        <p>Patient, care-provider and physician APIs, and a population-health data aggregation platform for value-based care.</p>
+        <div class="metrics"><span class="metric">~80,000 patients</span><span class="metric">Launched Dec 2018</span></div>
+      </article>
+
+      <article class="card proj" data-k="earlier" style="--c:var(--accent2)">
+        <div class="art"><span class="tag">eBay / PayPal</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="30" cy="34" r="12"/><path d="M30 14v6M30 48v6M10 34h6M44 34h6M16 20l4 4M40 44l4 4M16 48l4-4M40 24l4-4"/><circle cx="58" cy="58" r="8"/><path d="M58 44v4M58 68v4M44 58h4M68 58h4"/></svg></div>
+        <h3>Batch as a service</h3>
+        <p>Replaced individually built batches with one shared service, reducing idle computation cycles.</p>
+        <div class="metrics"><span class="metric">Shared platform</span><span class="metric">ESB routing</span></div>
+      </article>
+
+      <article class="card proj" data-k="earlier" style="--c:#2dd4bf">
+        <div class="art"><span class="tag">HomeLane</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="26" cy="40" r="14" fill="currentColor" fill-opacity=".12"/><circle cx="26" cy="40" r="5"/><path d="M40 40h32M60 40v10M68 40v7"/></svg></div>
+        <h3>OAuth2 auth &amp; pricing engine</h3>
+        <p>Token-based authentication with Google and Facebook OAuth2, a pricing engine and product catalog APIs.</p>
+        <div class="metrics"><span class="metric">OAuth2</span><span class="metric">Catalog APIs</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="recognition" class="reveal">
+    <div class="eyebrow">// beyond the day job</div>
+    <h2>Recognition &amp; learning</h2>
+    <p class="sub">Patents, publications, open source and continuous learning.</p>
+    <div class="two">
+      <div class="card list">
+        <div class="row"><span class="ico" style="--c:var(--warn)"><svg><use href="#i-bulb"/></svg></span><div><strong>Patent application (Philips)</strong><p>AI-Enabled Personal Healthcare Companion – an E2E Solution. IP ID 82187; Submission ID 2017ID05305.</p></div></div>
+        <div class="row"><span class="ico" style="--c:var(--accent2)"><svg><use href="#i-badge"/></svg></span><div><strong>IEEE publication</strong><p>A Cost Effective Solution for Control of a Mobile Embedded System Using GPRS (ISBN 978-1-4673-1850-1).</p></div></div>
+        <div class="row"><span class="ico" style="--c:var(--accent)"><svg><use href="#i-os"/></svg></span><div><strong>Open source</strong><p>swagger-ui-express-updated (npm) · Bug fix: OAuth2-Facebook in SocialAuth plugin · Correction: Virtualenvwrapper (OpenCV prerequisite).</p></div></div>
+      </div>
+      <div class="card list">
+        <div class="row"><span class="ico" style="--c:var(--accent3)"><svg><use href="#i-cap"/></svg></span><div><strong>B.E., Computer Science &amp; Engineering</strong><p>PSG College of Technology (Anna University) · 2009 – 2013 · CGPA 8.95</p></div></div>
+        <div class="row"><span class="ico" style="--c:#2dd4bf"><svg><use href="#i-ai"/></svg></span><div><strong>Certifications</strong><p>DeepLearning.AI (7 courses) · Google AI (10 badges) · Microservices Software Architecture: Patterns and Techniques · Leadership Skills Training: Become an Inspiring Leader! · Leadership: Practical Leadership Skills.</p></div></div>
+        <div class="row"><span class="ico" style="--c:#f472b6"><svg><use href="#i-lang"/></svg></span><div><strong>Languages</strong><p>English, Bengali, Hindi</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact reveal" id="contact">
+    <div class="eyebrow">// let's talk</div>
+    <h2>Building something ambitious?</h2>
+    <p class="sub" style="margin-inline:auto">I'm always happy to talk about engineering leadership, AI products and scaling teams.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:engg.tanmoy@gmail.com"><svg><use href="#i-mail"/></svg>engg.tanmoy@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/tanmoy-linkdin/" target="_blank" rel="noopener"><svg><use href="#i-in"/></svg>LinkedIn</a>
+      <a class="btn" href="assets/Tanmoy_Bhattacharjee_Resume.pdf" download><svg><use href="#i-dl"/></svg>Résumé (PDF)</a>
+    </div>
+  </div>
+</main>
+
+<footer>© <span id="yr">2026</span> Tanmoy Bhattacharjee · Singapore · Hand-built static page, no framework</footer>
+
+<script>
+(function(){
+  var d=document,root=d.documentElement;
+  d.getElementById('yr').textContent=new Date().getFullYear();
+  d.getElementById('theme').onclick=function(){
+    var cur=root.dataset.theme||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');
+    var nx=cur==='light'?'dark':'light';root.dataset.theme=nx;try{localStorage.setItem('theme',nx)}catch(e){}
+  };
+  var m=d.getElementById('menu'),l=d.getElementById('links');
+  m.onclick=function(){var o=l.classList.toggle('open');m.setAttribute('aria-expanded',o)};
+  l.onclick=function(e){if(e.target.tagName==='A'){l.classList.remove('open');m.setAttribute('aria-expanded','false')}};
+  // project filters
+  var bs=d.querySelectorAll('.filters button'),ps=d.querySelectorAll('.proj');
+  bs.forEach(function(b){b.onclick=function(){
+    bs.forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+    var f=b.dataset.f;ps.forEach(function(p){p.hidden=!(f==='all'||p.dataset.k===f)});
+  }});
+  // reveal
+  var rs=d.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+    rs.forEach(function(r){io.observe(r)});
+  } else rs.forEach(function(r){r.classList.add('in')});
+  // terminal
+  var lines=[
+    ['$ ','whoami'],['','Tanmoy Bhattacharjee · Senior Engineering Manager','o'],
+    ['$ ','cat experience.txt'],['','13+ yrs software · 6+ yrs managing teams','o'],
+    ['$ ','ls ./focus'],['','ai-llm-products/  platforms/  teams/  hands-on/','k'],
+    ['$ ','./impact --top'],['','+7.6% leads · ~USD 38K/mo saved · 2-3 deploys/wk','s'],
+    ['$ ','']
+  ];
+  var t=d.getElementById('term'),reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+  function render(n,partial){
+    var h='';for(var i=0;i<n;i++){var L=lines[i];h+=L[0]?'<div><span class="p">$</span> '+esc(L[1])+'</div>':'<div class="'+(L[2]==='k'?'k':L[2]==='s'?'s':'')+'">'+esc(L[1])+'</div>'}
+    if(partial!=null)h+='<div><span class="p">$</span> '+esc(partial)+'<span class="cursor"></span></div>';
+    t.innerHTML=h;
+  }
+  if(reduce){render(lines.length-1,'');return}
+  var i=0;
+  (function step(){
+    if(i>=lines.length-1){render(lines.length-1,'');return}
+    var L=lines[i];
+    if(L[0]){var c=0;(function type(){render(i,L[1].slice(0,c));if(c++<L[1].length)setTimeout(type,38);else{i++;setTimeout(step,180)}})()}
+    else{i++;render(i,null);setTimeout(step,260)}
+  })();
+})();
+</script>
+</body>
+</html>
